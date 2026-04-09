@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementary Science Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[var(--accent)] text-[var(--secondary)]">
+<style>
+  :root{
+    --primary:#FFC107; /* main yellow */
+    --secondary:#000000; /* black from logo */
+    --accent:#ffffff; /* white */
+  }
+</style>
+
+<!-- Navbar -->
+<header class="sticky top-0 bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center gap-3">
+      <img src="https://lh3.googleusercontent.com/d/1g9dg88-b_yPSBOCA9H21onWOFGxb-u39" class="w-10 h-10 object-contain" alt="ESA Logo" />
+      <h1 class="font-bold text-xl" style="color:#134c73">Elementary Science Academy</h1>
+    </div>
+    <nav class="hidden md:flex gap-6">
+      <a href="#scholarship" class="hover:text-[var(--primary)]">Scholarship</a>
+      <a href="#results" class="hover:text-[var(--primary)]">Results</a>
+      <a href="#faq" class="hover:text-[var(--primary)]">FAQ</a>
+      <a href="#contact" class="hover:text-[var(--primary)]">Contact</a>
+    </nav>
+    <a href="https://forms.gle/xLFyNXyC7ZxAVRTh6" target="_blank" class="bg-[var(--primary)] px-4 py-2 rounded-lg font-semibold hover:opacity-90">Register Now</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative text-center py-16 px-6 overflow-hidden">
+
+  <!-- Background Logo -->
+  <div class="absolute inset-0 flex justify-center items-center opacity-15 pointer-events-none translate-y-32">
+    <img src="https://lh3.googleusercontent.com/d/1SjPpG04lPR8507qosfisXklQVGOw3Csu" class="w-[500px] max-w-full object-contain" />
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10">
+    <h2 class="text-3xl md:text-5xl font-bold mb-4">ELEMENTARY SCIENCE ACADEMY</h2>
+    <p class="text-lg mb-2">Top Coaching for JEE / NEET / CUET Preparation</p>
+    <p class="text-sm text-gray-600 mb-4">Admissions Open • Classes 9th to 12th • Limited Seats</p>
+
+    <div id="countdown" class="text-xl font-semibold mb-6" style="color:#134c73"></div>
+
+    <div class="flex justify-center gap-4">
+      <a href="https://forms.gle/xLFyNXyC7ZxAVRTh6" target="_blank" class="bg-[var(--primary)] px-6 py-3 rounded-lg font-bold hover:opacity-90">Apply for Admission</a>
+      <a href="tel:9079205366" class="border border-black px-6 py-3 rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--accent)]">Call Now</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- Admissions Section -->
+<section class="py-16 px-6 max-w-6xl mx-auto">
+  <h3 class="text-3xl font-bold text-center mb-10">Admissions Process</h3>
+  <div class="grid md:grid-cols-3 gap-6 text-center">
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <h4 class="font-bold text-lg">Step 1</h4>
+      <p class="text-gray-600 mt-2">Fill the admission form online or visit institute.</p>
+    </div>
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <h4 class="font-bold text-lg">Step 2</h4>
+      <p class="text-gray-600 mt-2">Appear for ESAT (Scholarship Test).</p>
+    </div>
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <h4 class="font-bold text-lg">Step 3</h4>
+      <p class="text-gray-600 mt-2">Get admission with scholarship based on performance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="py-16 px-6 max-w-6xl mx-auto">
+  <h3 class="text-3xl font-bold text-center mb-10">Why Choose ESAT?</h3>
+  <div class="grid md:grid-cols-3 gap-6 text-center">
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <h4 class="font-bold text-lg">Expert Faculty</h4>
+      <p class="text-gray-600 mt-2">Learn from experienced teachers focused on results.</p>
+    </div>
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <h4 class="font-bold text-lg">Proven Results</h4>
+      <p class="text-gray-600 mt-2">Consistent top ranks in JEE, NEET & CUET.</p>
+    </div>
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <h4 class="font-bold text-lg">Personal Mentorship</h4>
+      <p class="text-gray-600 mt-2">Individual attention for every student.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Scholarship Section -->
+<section id="scholarship" class="py-16 px-6 max-w-5xl mx-auto">
+  <h3 class="text-3xl font-bold mb-2 text-center">ESAT Exam Details</h3>
+  <p class="text-center text-gray-500 mb-6">ESAT stands for <strong>Elementary Scholarship Admission Test</strong></p>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <p><strong>Date & Time:</strong> April 12, 2026 at 9:00 AM</p>
+      <p><strong>Pattern:</strong> MCQ-based</p>
+      <p><strong>Syllabus:</strong> Previous class topics</p>
+      <p><strong>Fees:</strong> ₹0 (No fee)</p>
+    </div>
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl bg-yellow-50">
+      <p class="font-bold">Scholarship Benefits:</p>
+      <ul class="mt-2 text-sm text-gray-700">
+        <li>• Up to 90% fee waiver</li>
+        <li>• Free counseling session</li>
+        <li>• Performance analysis report</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Results -->
+<section id="results" class="py-16 px-6 bg-[var(--primary)]/10">
+  <h3 class="text-3xl font-bold text-center mb-10">Wall of Fame</h3>
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition text-center">
+      <img src="https://lh3.googleusercontent.com/d/1LPG9KGm39cvwGOpKq3MNxxHKpGTiOkvd" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 border-2 border-[var(--primary)]" />
+      <h4 class="font-bold">Amar Gupta</h4>
+      <span class="bg-[var(--primary)] text-black text-xs px-2 py-1 rounded">AIR 247</span>
+      <p class="text-sm mt-1">IIT Roorkee</p>
+    </div>
+
+    <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition text-center">
+      <img src="https://lh3.googleusercontent.com/d/1dNN1EdzyQ4idRP6ThojxT_JLog4UV9cK" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 border-2 border-[var(--primary)]" />
+      <h4 class="font-bold">Akshita Gupta</h4>
+      <span class="bg-[var(--primary)] text-black text-xs px-2 py-1 rounded">AIR 4</span>
+      <p class="text-sm mt-1">CUET</p>
+    </div>
+
+    <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition text-center">
+      <img src="https://lh3.googleusercontent.com/d/1YhmZrldpA9QxI4q-WxurYfko0lDAZ_Wc" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 border-2 border-[var(--primary)]" />
+      <h4 class="font-bold">Mudit Sharma</h4>
+      <span class="bg-[var(--primary)] text-black text-xs px-2 py-1 rounded">98%ile</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 px-6 max-w-6xl mx-auto">
+  <h3 class="text-3xl font-bold text-center mb-10">What Students Say</h3>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <p>"Best coaching in Tonk. Teachers are very supportive."</p>
+      <p class="mt-3 font-bold">- Student</p>
+    </div>
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <p>"My child showed significant improvement in performance and confidence after joining."</p>
+      <p class="mt-3 font-bold">- Parent</p>
+    </div>
+    <div class="p-6 border border-[var(--primary)]/30 rounded-xl">
+      <p>"Structured learning and great test series."</p>
+      <p class="mt-3 font-bold">- Student</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-16 px-6 max-w-5xl mx-auto">
+  <h3 class="text-3xl font-bold text-center mb-10">FAQs</h3>
+  <div class="space-y-4">
+    <div class="p-4 border rounded">
+      <p class="font-semibold">Is ESAT free?</p>
+      <p class="text-gray-600">Yes, registration is completely free.</p>
+    </div>
+    <div class="p-4 border rounded">
+      <p class="font-semibold">Who can apply?</p>
+      <p class="text-gray-600">Students from class 9th to 12th.</p>
+    </div>
+    <div class="p-4 border rounded">
+      <p class="font-semibold">What is syllabus?</p>
+      <p class="text-gray-600">Based on previous class topics.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="bg-[var(--secondary)] text-[var(--accent)] py-10 text-center">
+  <p>3rd floor, Jio office building near Emmanuel School, Tonk (Raj.)</p>
+  <p>Contact: 9079205366, 8905220266</p>
+  <p>@elementaryscienceacademy0012</p>
+</footer>
+
+<!-- Sticky Button -->
+<a href="https://forms.gle/xLFyNXyC7ZxAVRTh6" target="_blank" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-[var(--primary)] px-6 py-3 rounded-full font-bold md:hidden">Register Now</a>
+
+<script>
+const countdown = document.getElementById('countdown');
+const targetDate = new Date('April 12, 2026 09:00:00').getTime();
+setInterval(() => {
+  const now = new Date().getTime();
+  const diff = targetDate - now;
+  const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const m = Math.floor((diff / (1000 * 60)) % 60);
+  const s = Math.floor((diff / 1000) % 60);
+  countdown.innerHTML = `Exam starts in ${d}d ${h}h ${m}m ${s}s`;
+}, 1000);
+</script>
+
+</body>
+</html>
