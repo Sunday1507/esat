@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#2d476f",
+                        "tertiary": "#321b00",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#545f72",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001b3c",
+                        "tertiary-fixed-dim": "#f2bc82",
+                        "secondary-container": "#d5e0f7",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-bright": "#f7fafc",
+                        "primary-container": "#1a365d",
+                        "surface": "#f7fafc",
+                        "on-tertiary-container": "#c6955e",
+                        "surface-container-low": "#f1f4f6",
+                        "on-primary": "#ffffff",
+                        "on-background": "#181c1e",
+                        "surface-container-high": "#e5e9eb",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#43474e",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-container": "#586377",
+                        "primary": "#002045",
+                        "surface-tint": "#455f88",
+                        "on-surface": "#181c1e",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "outline-variant": "#c4c6cf",
+                        "primary-fixed": "#d6e3ff",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "on-tertiary-fixed-variant": "#633f0f",
+                        "on-tertiary-fixed": "#2b1700",
+                        "tertiary-container": "#4f2e00",
+                        "surface-dim": "#d7dadc",
+                        "primary-fixed-dim": "#adc7f7",
+                        "background": "#f7fafc",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container": "#ebeef0",
+                        "outline": "#74777f",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#adc7f7",
+                        "tertiary-fixed": "#ffddba",
+                        "inverse-on-surface": "#eef1f3",
+                        "on-secondary-fixed": "#111c2c",
+                        "on-primary-container": "#86a0cd",
+                        "secondary-fixed": "#d8e3fa"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(247, 250, 252, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed-dim selection:text-primary">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<span class="text-xl font-black font-headline tracking-tighter text-blue-950">Elementary Science Academy</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-800 transition-all hover:scale-105" href="#">Home</a>
+<a class="font-headline tracking-tight text-sm font-semibold text-blue-900 border-b-2 border-blue-900 pb-1 hover:scale-105 transition-all" href="#">Programs</a>
+<a class="font-headline tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-800 transition-all hover:scale-105" href="#">Admissions</a>
+<a class="font-headline tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-800 transition-all hover:scale-105" href="#">Faculty</a>
+<a class="font-headline tracking-tight text-sm font-semibold text-slate-500 hover:text-blue-800 transition-all hover:scale-105" href="#">Contact</a>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-md font-headline font-semibold text-sm hover:scale-105 active:opacity-70 transition-all">Enroll Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-28 pb-20">
+<!-- Hero Section: Editorial Style -->
+<section class="max-w-7xl mx-auto px-8 mb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="font-label text-sm font-semibold tracking-widest uppercase text-surface-tint mb-4 block">Academic Programs 2024-25</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tight leading-tight mb-8">
+                    Scientific Inquiry Starts <span class="text-primary-container">Here.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
+                    From the foundational concepts of Class 9 to the rigors of NEET and JEE, we provide Tonk's aspiring scientists with world-class coaching and personalized mentorship.
+                </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span class="text-sm font-semibold text-on-surface">CBSE &amp; RBSE English Medium</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span class="text-sm font-semibold text-on-surface">Tonk Regional Hub</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="clean professional laboratory interior with microscope and glassware in soft natural daylight representing scientific excellence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChTHiArUPrLEjbVpDh7nB7_KizvDsNFGbeYjyo_rN3Yv8J3WDm4IsY04f36ePs0BHkqdTD9VQl9uYE-z8ieD-wQJGgjR794STnvHfkdiWyEY4BcTDSxdaA1mUzumBM_ojgJzNnoEdYI-FZI4pXQEAP6cANZjH2Bjk7WQ2y_Lhng-8WvRP1Hi1n2Hn9bOftwIdzS0VKfg5MNB9BgImBwNEFO_N8ZqoVNEX1bEZvdz7M8t7s-hpTqvNTXWc3GKMmN91HjbPSgoK0"/>
+</div>
+<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-primary-fixed-dim rounded-2xl -z-0"></div>
+<div class="absolute -top-6 -right-6 w-32 h-32 border-4 border-secondary-container rounded-2xl -z-0"></div>
+</div>
+</section>
+<!-- Academic Features: Bento Grid -->
+<section class="bg-surface-container-low py-24 mb-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-3xl font-bold text-primary mb-4">The Academy Standard</h2>
+<p class="text-on-surface-variant max-w-xl">Every course at Elementary Science Academy is built on these five pillars of academic success.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/15 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-3xl text-primary mb-4" data-icon="calendar_today">calendar_today</span>
+<h3 class="font-headline font-bold text-lg mb-2">Weekly Tests</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Continuous assessment through strictly timed weekend examinations.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/15 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-3xl text-primary mb-4" data-icon="description">description</span>
+<h3 class="font-headline font-bold text-lg mb-2">DPPs</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Daily Practice Problems to ensure daily mastery of classroom concepts.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/15 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-3xl text-primary mb-4" data-icon="history_edu">history_edu</span>
+<h3 class="font-headline font-bold text-lg mb-2">PYQs</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Detailed analysis and practice of Previous Year Questions.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/15 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-3xl text-primary mb-4" data-icon="library_books">library_books</span>
+<h3 class="font-headline font-bold text-lg mb-2">Study Material</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Comprehensive, scientifically curated notes and modules.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/15 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-3xl text-primary mb-4" data-icon="record_voice_over">record_voice_over</span>
+<h3 class="font-headline font-bold text-lg mb-2">Doubt Sessions</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Regular one-on-one sessions for immediate concept clarification.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Course Sections: Asymmetric Layout -->
+<section class="max-w-7xl mx-auto px-8 space-y-32">
+<!-- 1. Foundation Program -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="relative">
+<div class="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-primary-fixed to-primary"></div>
+<div class="pl-8">
+<span class="text-xs font-bold text-primary-fixed-dim bg-primary px-3 py-1 rounded-full mb-6 inline-block">Grades 9 &amp; 10</span>
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-6">Foundation Program</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                                Our Foundation course is meticulously designed to bridge the gap between school curriculum and competitive requirements. We focus on building a robust scientific temperament early on.
+                            </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-on-surface font-medium">Early conceptual clarity for Physics &amp; Chemistry</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-on-surface font-medium">Logical reasoning &amp; aptitude training</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-on-surface font-medium">Olympiad &amp; NTSE oriented approach</span>
+</li>
+</ul>
+<button class="text-primary font-bold flex items-center gap-2 group">
+                                View Full Syllabus 
+                                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="rounded-2xl overflow-hidden shadow-xl aspect-video">
+<img class="w-full h-full object-cover" data-alt="focused students in a modern science classroom environment with minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNgySLKuvvuPIg11iS001me_gL9ITxYTHp0IPcajenU6f7p6_35msBNDfX35muazEB6YUHsNiRssxDjs8pydYF4MdI1HRpLqdX82mla-G7nbHGhuWT7Y5H9spNERV_yz1agGBMeRlcKBqXrzP8F4i-Cyh2uUSC6KtX8_71zTowJWlbVbCdw8E-0HcXef2c6cyWva0osuWkODLXsI-b1eie8K_hyo2bl9bx06aPUxsUK3_zPjaYVcANMnFyW88juXVpfKoGF4P0"/>
+</div>
+</div>
+</div>
+<!-- 2. Board Preparation -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<div class="rounded-2xl overflow-hidden shadow-xl aspect-video">
+<img class="w-full h-full object-cover" data-alt="organized study desk with textbooks and notes representing academic focus and discipline" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeosWXkVUY98kNI4WcTR_8M8yd5EXpKnbe0rsBNEZ9VkgYSGn23D5JBVCNPaYGN4wlHAHWJ8WaByEOc2P2_c6zH6a0v1u9770iXOgqn1_2Mh1mm8vC_gw3L9Mh3o1t6_7KUp86L8Svfgf8x5Vcfg5XevmTokOrLp7XxehixKKZJdwHbjevdQeEPbb98CxALgGQZekKMq1g-GJb-H67OWtQVT6VsFgKS_WQRv0ohK_rWjimdcMdSpjhKNbqQD_PIZ-3Ii-PTj-a"/>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative">
+<div class="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary-fixed to-secondary"></div>
+<div class="pl-8">
+<span class="text-xs font-bold text-on-secondary-container bg-secondary-container px-3 py-1 rounded-full mb-6 inline-block">Grades 10 &amp; 12</span>
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-6">Board Preparation</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                                Specializing in CBSE and RBSE (English Medium) boards. We ensure our students achieve 95%+ scores through rigorous writing practice and concept mapping.
+                            </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container p-4 rounded-xl">
+<h4 class="font-bold text-primary text-xl">CBSE</h4>
+<p class="text-xs text-on-surface-variant">Complete NCERT mastery</p>
+</div>
+<div class="bg-surface-container p-4 rounded-xl">
+<h4 class="font-bold text-primary text-xl">RBSE</h4>
+<p class="text-xs text-on-surface-variant">English Medium Focused</p>
+</div>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">draw</span>
+<span class="text-on-surface font-medium">Answer writing techniques</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">quiz</span>
+<span class="text-on-surface font-medium">Last 10-year paper analysis</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Competitive Preparation -->
+<div class="bg-primary text-white rounded-2xl p-8 md:p-16 relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-6">
+<span class="text-primary-fixed-dim text-sm font-bold tracking-widest uppercase mb-4 block">Elite Training</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-8">Competitive Edge</h2>
+<p class="text-on-primary-container text-lg mb-12 leading-relaxed">
+                            A dedicated pathway for students aiming for India's most prestigious institutions. We provide the intensity of Kota's ecosystem right here in Tonk.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white">medical_services</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">NEET (UG)</h4>
+<p class="text-sm text-on-primary-container">Integrated Physics, Chemistry, and intensive Biology modules.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white">engineering</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">JEE Main &amp; Advanced</h4>
+<p class="text-sm text-on-primary-container">Strategic problem solving and advanced mathematical applications.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white">military_tech</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">NDA, CUET &amp; Olympiads</h4>
+<p class="text-sm text-on-primary-container">Targeted prep for national level entrance and merit exams.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 flex items-center justify-center">
+<div class="grid grid-cols-2 gap-4 w-full">
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10">
+<h5 class="text-primary-fixed-dim font-black text-3xl mb-1">150+</h5>
+<p class="text-xs uppercase tracking-widest font-bold">Mock Tests</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10">
+<h5 class="text-primary-fixed-dim font-black text-3xl mb-1">2k+</h5>
+<p class="text-xs uppercase tracking-widest font-bold">Solved PYQs</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10">
+<h5 class="text-primary-fixed-dim font-black text-3xl mb-1">500+</h5>
+<p class="text-xs uppercase tracking-widest font-bold">Daily DPPs</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10">
+<h5 class="text-primary-fixed-dim font-black text-3xl mb-1">100%</h5>
+<p class="text-xs uppercase tracking-widest font-bold">Doubt Support</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Abstract Background Elements -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/30 rounded-full blur-3xl -mr-48 -mt-48"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-surface-tint/20 rounded-full blur-3xl -ml-32 -mb-32"></div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-32 max-w-7xl mx-auto px-8">
+<div class="bg-surface-container-high rounded-2xl p-12 text-center">
+<h2 class="font-headline text-3xl font-bold text-primary mb-6">Ready to Start Your Scientific Journey?</h2>
+<p class="text-on-surface-variant mb-10 max-w-2xl mx-auto">Visit our Tonk campus for a free career counseling session and a demo class. We believe in every student's potential.</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">Download Brochure</button>
+<a href="https://wa.me/919079205366?text=Hi%20I%20want%20details%20about%20admission"
+   target="_blank"
+   class="bg-white border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary/5 transition-colors inline-block text-center">
+  Contact Counselor
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-slate-100 w-full py-16 px-8 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto border-t border-slate-200 pt-16">
+<div>
+<span class="font-headline font-bold text-lg text-blue-900 block mb-4">Elementary Science Academy</span>
+<p class="text-slate-500 font-body text-sm leading-relaxed mb-6">Empowering the next generation of scientists, doctors, and engineers through rigorous academic coaching and compassionate mentorship in Tonk.</p>
+<p class="font-headline text-xs tracking-widest uppercase text-blue-950">© 2024 Elementary Science Academy. Excellence in Scientific Inquiry.</p>
+</div>
+<div class="flex flex-col md:items-end gap-6">
+<div class="flex flex-wrap gap-8">
+<a class="font-headline text-xs tracking-widest uppercase text-slate-400 hover:text-blue-700 transition-colors" href="#">Privacy Policy</a>
+<a class="font-headline text-xs tracking-widest uppercase text-slate-400 hover:text-blue-700 transition-colors" href="#">Terms of Service</a>
+<a class="font-headline text-xs tracking-widest uppercase text-slate-400 hover:text-blue-700 transition-colors" href="#">Research Ethics</a>
+<a class="font-headline text-xs tracking-widest uppercase text-slate-400 hover:text-blue-700 transition-colors" href="#">Sitemap</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">alternate_email</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">call</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
