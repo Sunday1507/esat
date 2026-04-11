@@ -227,18 +227,42 @@ Submit Academic Inquiry
 <div class="h-[450px] w-full bg-surface-container-highest flex items-center justify-center relative">
 <img alt="Map view of Tonk area" class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 transition-all duration-700" data-alt="Clean minimal map view of a city grid with blue and grey pins highlighting a premium building location in soft morning light" data-location="Tonk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv1rz-J-KJozdXwElvVF8gtsAQt1zQaE7gIE2eR3UbMU-gr8Jc00TA8AugelT6TIu-_8YyeMDWn_ZyzP2sNN5PQFVUkIpqoFWB22ufa6aZ-hNxZ_LOl0pekUt-HjnETasnmhM9Bd3Io0zAtxmDdqRdOBKkLmumCC5xunbyt3VJcxnVudfCWF9QK3M06zZtmxC9_MA6r3D7EuEasqLvq219vJCR5TnyA3COPDM_5CPRbQ27VHPypkzV_nceZp1yhGGGOG7es3Qt"/>
 <!-- Floating Map Card -->
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10">
-<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl animate-bounce mb-4 mx-auto">
-<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-xl shadow-2xl max-w-xs mx-auto border-t-4 border-primary">
-<h4 class="font-headline font-bold text-primary mb-1">Find Us Here</h4>
-<p class="text-xs text-on-surface-variant">3rd Floor, Jio Office Building, Tonk</p>
-<a href="https://maps.app.goo.gl/4ptwHp2tgRVA1C2m9" target="_blank"
-   class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:scale-105 hover:shadow-xl transition-all inline-flex items-center gap-2">
-   📍 Get Directions
-</a>
-</div>
+<div class="fixed bottom-6 left-6 z-50 bg-white shadow-2xl rounded-2xl p-4 w-72 border border-gray-200 hover:shadow-xl transition-all">
+
+  <!-- Header -->
+  <div class="flex items-center gap-3 mb-3">
+    <div class="bg-primary/10 p-2 rounded-lg">
+      📍
+    </div>
+    <div>
+      <h4 class="font-bold text-primary text-sm">Visit Our Campus</h4>
+      <p class="text-xs text-gray-500">Tonk, Rajasthan</p>
+    </div>
+  </div>
+
+  <!-- Mini Map Preview -->
+  <div class="rounded-xl overflow-hidden mb-3">
+    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Tonk&zoom=14&size=300x150&markers=color:red%7CTonk"
+         alt="Map"
+         class="w-full h-28 object-cover">
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="flex gap-2">
+    
+    <a href="https://maps.app.goo.gl/4ptwHp2tgRVA1C2m9" target="_blank"
+       class="flex-1 bg-primary text-white text-sm py-2 rounded-lg font-bold text-center hover:scale-105 transition-all">
+       Directions
+    </a>
+
+    <a href="https://wa.me/919079205366?text=Hi%2C%20I%20want%20to%20visit%20your%20institute"
+       target="_blank"
+       class="flex-1 bg-green-500 text-white text-sm py-2 rounded-lg font-bold text-center hover:scale-105 transition-all">
+       Visit
+    </a>
+
+  </div>
+
 </div>
 <!-- Map Legend/Texture Overlays -->
 <div class="absolute inset-0 pointer-events-none border-[12px] border-surface-container-lowest/20"></div>
