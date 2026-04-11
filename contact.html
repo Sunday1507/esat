@@ -177,38 +177,50 @@
 <section class="bg-surface-container-lowest p-10 rounded-xl-card shadow-sm">
 <h2 class="text-3xl font-headline font-extrabold text-primary mb-2">Send an Inquiry</h2>
 <p class="text-on-surface-variant mb-8">Fill out the form below and our academic coordinator will contact you shortly.</p>
-<form class="space-y-6">
+
+<form action="https://formsubmit.co/dsj654@gmail.com" method="POST" class="space-y-6">
+
+<!-- Hidden settings -->
+<input type="hidden" name="_subject" value="New Academic Inquiry Form Submission">
+<input type="hidden" name="_captcha" value="false">
+
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
 <div class="space-y-2">
 <label class="text-sm font-semibold text-primary font-label ml-1">Student/Parent Name</label>
-<input class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-outline/60" placeholder="John Doe" type="text"/>
+<input name="name" class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-outline/60" placeholder="John Doe" type="text" required/>
 </div>
+
 <div class="space-y-2">
 <label class="text-sm font-semibold text-primary font-label ml-1">Contact Phone</label>
-<input class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-outline/60" placeholder="+91 00000 00000" type="tel"/>
+<input name="phone" class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-outline/60" placeholder="+91 00000 00000" type="tel" required/>
 </div>
+
 </div>
+
 <div class="space-y-2">
 <label class="text-sm font-semibold text-primary font-label ml-1">Current Grade / Standard</label>
-<select class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 transition-all text-on-surface-variant">
-<option>Select Grade</option>
+<select name="grade" class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 transition-all text-on-surface-variant" required>
+<option value="">Select Grade</option>
 <option>Elementary (Grades 1-5)</option>
 <option>Middle School (Grades 6-8)</option>
 <option>High School (Grades 9-10)</option>
 <option>Competitive Coaching</option>
 </select>
 </div>
+
 <div class="space-y-2">
 <label class="text-sm font-semibold text-primary font-label ml-1">Your Message</label>
-<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-outline/60 resize-none" placeholder="How can we help you today?" rows="4"></textarea>
+<textarea name="message" class="w-full px-4 py-3 rounded-lg bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 transition-all placeholder:text-outline/60 resize-none" placeholder="How can we help you today?" rows="4"></textarea>
 </div>
-<button class="w-full editorial-gradient text-white font-bold py-4 rounded-lg shadow-lg hover:opacity-95 active:scale-[0.98] transition-all flex items-center justify-center gap-2 group" type="submit">
-                            Submit Academic Inquiry
-                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+
+<button type="submit" class="w-full editorial-gradient text-white font-bold py-4 rounded-lg shadow-lg hover:opacity-95 active:scale-[0.98] transition-all flex items-center justify-center gap-2 group">
+Submit Academic Inquiry
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
 </button>
+
 </form>
 </section>
-</div>
 </div>
 <!-- Map Section -->
 <section class="mt-16 rounded-xl-card overflow-hidden shadow-sm relative group">
@@ -222,7 +234,10 @@
 <div class="bg-surface-container-lowest p-6 rounded-xl shadow-2xl max-w-xs mx-auto border-t-4 border-primary">
 <h4 class="font-headline font-bold text-primary mb-1">Find Us Here</h4>
 <p class="text-xs text-on-surface-variant">3rd Floor, Jio Office Building, Tonk</p>
-<button class="mt-4 text-xs font-bold text-surface-tint uppercase tracking-widest hover:underline">Get Directions</button>
+<a href="https://maps.app.goo.gl/4ptwHp2tgRVA1C2m9" target="_blank"
+   class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:scale-105 hover:shadow-xl transition-all inline-flex items-center gap-2">
+   📍 Get Directions
+</a>
 </div>
 </div>
 <!-- Map Legend/Texture Overlays -->
@@ -240,7 +255,7 @@
 <div class="flex gap-8">
 <a class="text-slate-500 text-sm hover:underline decoration-blue-900/30 underline-offset-4" href="#">Privacy Policy</a>
 <a class="text-slate-500 text-sm hover:underline decoration-blue-900/30 underline-offset-4" href="#">Terms of Service</a>
-<a class="text-slate-500 text-sm hover:underline decoration-blue-900/30 underline-offset-4" href="#">Campus Map</a>
+<a class="text-slate-500 text-sm hover:underline decoration-blue-900/30 underline-offset-4" href="https://maps.app.goo.gl/4ptwHp2tgRVA1C2m9">Campus Map</a>
 <a class="text-slate-500 text-sm hover:underline decoration-blue-900/30 underline-offset-4" href="#">Careers</a>
 </div>
 </div>
