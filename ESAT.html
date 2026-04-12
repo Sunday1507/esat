@@ -93,9 +93,36 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+        /* Page Transition Effects */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        .page-transition {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #002045 0%, #1A365D 100%);
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            animation: fadeOut 0.5s ease-out forwards;
+        }
+        .page-transition.active {
+            opacity: 1;
+            animation: fadeIn 0.5s ease-in;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Page Transition Overlay -->
+<div class="page-transition" id="pageTransition"></div>
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
 <div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
@@ -512,4 +539,39 @@
 </div>
 </div>
 </footer>
-</body></html>
+</body>
+<script>
+  // Page Transition Handler
+  document.addEventListener('DOMContentLoaded', function() {
+    const pageTransition = document.getElementById('pageTransition');
+    
+    // Fade out overlay on page load
+    pageTransition.classList.remove('active');
+    
+    // Handle all internal navigation links
+    document.querySelectorAll('a[href]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        
+        // Skip external links, phone links, forms, and anchor links
+        if (href.startsWith('http') || href.startsWith('tel:') || href.startsWith('mailto:') || 
+            href.startsWith('https://') || href.startsWith('#') || href.includes('forms.gle') ||
+            this.hasAttribute('target')) {
+          return;
+        }
+        
+        // Check if it's an internal page link
+        if (href.endsWith('.html') || href === 'index.html') {
+          e.preventDefault();
+          pageTransition.classList.add('active');
+          
+          // Navigate after fade-in completes
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500);
+        }
+      });
+    });
+  });
+</script>
+</html>
